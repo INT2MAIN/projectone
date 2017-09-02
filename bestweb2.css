@@ -1,0 +1,131 @@
+@media screen and (max-width: 900px) {
+	.fa-3x{
+		font-size:2em;
+	}
+	.col-xs-3{
+		padding-right:0;
+	}
+
+	.col-xs-6{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.wrap{
+		height:42px;
+	}
+	ul.nav.nav-pills>li>a {
+    height: 42px;
+    line-height: 26px;
+    font-family: "my1";
+    font-size:12px;
+}
+.fontstyle {
+    font-family: 'my';
+    color: #fff;
+    font-size: 14px;
+}
+ul.nav.nav-pills>li {
+    width: 60px;
+    text-align: center;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+    background-color: #f05e57;
+}
+span#btn {
+    color: #fff;
+    display: inline-block;
+    float: right;
+    margin-right: 34px;
+    font-family: "my1";
+    height: 42px;
+    line-height: 47px;
+    font-size: 12px;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,10%);
+    width: 90%;
+}
+.bg-img{
+	height:400px;
+}
+.bg-img-content{
+	width:100%;
+}
+.content-text{
+	max-width: none;
+	left:20px;
+	right:20px;
+	bottom: 20px;
+}
+.text1{
+	    font-size: 14px;
+    font-weight: bold;
+}
+.text2{
+	    font-size: 12px;
+    font-weight: bold;
+}
+.text3{
+	    font-size: 14px;
+    font-weight: bold;
+}
+.header-content>.row>div{
+	width: 91%;
+    margin: 0 auto;
+    left: 15px;
+    margin-bottom: 25px;
+    background-color: #191919;
+    padding-bottom: 25px
+}
+
+.content-message-one.col-sm.col-sm-12.col-xs-12 {
+    
+    height: 400px;
+}
+.content-left.col-sm-6.col-xs-12 {
+    height: 300px;
+    padding-right: 15px;
+}
+.im {
+    
+    height: 300px;
+}
+.right-text {
+	height: 300px;
+    padding: 10px 40px;
+    color: #fff;
+    
+}
+.right-text h3 {
+    font-size: 25px;
+}
+.content-cc.container {
+    color: #000;
+    padding: 0;
+    text-align: center;
+}
+.content-right.col-sm-6.col-xs-12 {
+    position: absolute;
+    height: 300px;
+    background-color: rgba(25, 24, 24, 0.18);
+}
+.content-right.col-sm-6.col-xs-12 {
+    position: absolute;
+    height: 300px;
+    background-color: rgba(25, 24, 24, 0.18);
+    z-index: 2;
+}
+
+
+
+}

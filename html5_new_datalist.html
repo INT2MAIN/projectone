@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+  input[type=url]::-webkit-inner-spin-button { visibility: hidden; }
+    input[type=url]::-webkit-out-spin-button { visibility: hidden; }
+    </style>
+  </head>
+  <body>
+    <p>input中的list值对应datalist里面的id,必须一致</p>
+    <input type="url" list="url_list" name="link" />
+    <datalist  id="url_list">
+      <option label="W3School" value="http://www.w3school.com.cn" />
+	    <option label="Google" value="http://www.google.com" />
+	    <option label="Microsoft" value="http://www.microsoft.com" />
+    </datalist>
+    <input type="submit" name="" value="搜索">
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+  <div class=" input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-feedback has-success">
+<label for="iii" class="control-label">input</label>
+<div class="input-group  has-success">	
+	<span class="input-group-addon">$</span>
+	<input type="text" name="" id="iii"checked="" class=" form-control" placeholder="No">
+	<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+</div>
+</div>
+ <div class="form-group form-inline has-warning">
+ 	<label  for="ww">
+ 	城市:
+ 	</label>
+ 	<select class="form-control" id="ww">
+    <option name="11">成都</option>
+ 		<option name="11">眉山</option>
+    <option name="11">上海</option>
+    <option name="11">乐山</option>
+ 	</select>
+ </div>
+<div class="form-group">
+	<label for="qq">性别：</label>
+	<input type="radio" name="rr" >女
+	<input type="radio" name="rr" >男
+</div>
+<div class="form-group">
+	<label for="qq">运动：</label>
+	<input type="checkbox" name="r" >篮球
+	<input type="checkbox" name="r" >足球
+</div>
+
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  Enter a valid email address
+</div>
+ 
+<div class="dropup">
+ <div class="btn-group">
+  <button type="button" class="btn btn-danger yy">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  
+  <ul class="dropdown-menu" >
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".dropup li").click(function(){
+			var aa=$(this).text();
+			$(".dropup button.yy").text(aa);
+		})
+	})
+</script>
+</body>
+</html>

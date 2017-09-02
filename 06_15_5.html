@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+	<meta  name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+a.navbar-brand {
+    position: relative;
+    left: 100px;
+}
+.container-fluid {
+    padding-right: 0; 
+    padding-left:0; 
+    margin-right: auto;
+    margin-left: auto;
+}
+input{
+	display: none;
+}
+.bb{
+	width:220px;
+}
+article {
+    height: 0;
+    z-index: 10;
+    position: relative;
+    margin-top: -1px;
+    overflow: hidden;
+    transition: all 1s;
+}
+label {
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    line-height: 24px;
+    font-size: 15px;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3), 1px 0px 0px 0px rgba(255,255,255,0.9) inset, 0px 2px 2px rgba(0,0,0,0.1);
+        margin-bottom: 1px;
+}
+p {
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.bb input:checked ~article {
+    height: 80px;
+    background-color: #f5f5f5;
+}
+article ul {
+    list-style: none;
+}
+article li {
+    padding: 8px 15px;
+}
+.yy{
+    width: 215px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+list-style: none;
+}
+.panel-body li:nth-child(1) {
+    padding-bottom: 16px;
+}
+.panel{
+	    margin-bottom: -2px;
+}
+.panel-body span{
+	margin-right: 10px;
+}
+.col-md-2.col-xs-12.ee {
+    position: relative;
+    left: -20px;
+}
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">后台管理系统</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+     
+     <div class="container">
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="#">欢迎：15175298888</a></li>
+        <li><a href="#">退出</a></li>
+        <li><a href="#">消息<span class="badge">10</span></a></li>
+       
+      </ul>
+		</div>
+    </div>
+  </div>
+  
+</nav>
+<div class="container-fluid">
+  	<nav >
+		<ul class="nav nav-pills" id="nav">
+			<li class="active"><a href="#div1" data-toggle="tab">订单管理</a></li>
+			<li><a href="#div2" data-toggle="tab">员工管理</a></li>
+			<li><a href="#div3" data-toggle="tab">会员管理</a></li>
+			
+			
+		</ul>
+	</nav>
+  </div>
+
+ <div class="tab-content">
+ <div class="tab-pane fade in active" id="div1">
+ <div class="col-md-2 col-xs-12 ee">
+ <nav class="navbar-left text-left ">
+ <div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>订单管理</a>
+		</div>
+		<div class="panel-collapse collapse" id="my">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my2" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>员工管理</a>
+		</div>
+		<div class="panel-collapse collapse" id="my2">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my3" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>会员管理</a>
+		</div>
+		<div class="panel-collapse collapse" id="my3">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+ </nav>
+</div>
+
+
+
+
+ <div class="col-md-10 col-xs-12">
+
+ <div class="panel panel-default ">
+		<div class="panel-heading">
+		<form class="form-inline">
+			<input type="text" name="" class="form-control" placeholder="请输入订单号">
+			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>点击查询</button>
+		</form>
+		</div>
+			
+			<table class="table table-bordered text-center table-responsive">	
+				<tr>
+					<td>订单号</td>
+					<td>产品名称</td>
+					<td>客户名称</td>
+					<td>性别</td>
+					<td>电话</td>
+					<td>地址</td>
+					<td>车牌号码</td>
+					<td>车型</td>
+					<td>车身颜色</td>
+					<td>预约时间</td>
+					<td>下单时间</td>
+					<td>订单状态</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配可点】</a><a href="#">【未分配可点】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配可点】</a><a href="#">【未分配可点】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配可点】</a><a href="#">【未分配可点】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配可点】</a><a href="#">【未分配可点】</a></td>
+				</tr>
+				<tr>
+					<td colspan="13">
+						<ul class="pager">
+							<li class="active"><a href="#div1" data-toggle="tab">上一页</a></li>
+			<li><a href="#div1" data-toggle="tab">1</a></li>
+			<li ><a href="#div2" data-toggle="tab">2</a></li>
+			<li><a href="#div3" data-toggle="tab">3</a></li>
+			<li><a href="#div5" data-toggle="tab">下一页</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		
+	</div>
+	</div>
+	</div>
+	<!-- 弹出框 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+		<div class="modal-dialog">
+			
+			<div class="modal-content">
+				<div class="modal-header alert alert-danger">
+					<!-- <h3>我是一个提示框
+					<span class="glyphicon glyphicon-remove  pull-right" data-dismiss="modal" ></span></h3> -->
+					温馨提醒
+					<span class="glyphicon glyphicon-remove  pull-right" data-dismiss="modal" ></span>
+					
+				</div>
+				<div class="modal-body">
+					<div>
+						<form  class="form-horizontal" action="" role="form">
+					        
+					        <div class="form-group has-feedback">
+					            <span class="col-sm-2" style="font-weight: bold">用户名</span>
+					            <div class="col-sm-10 has-feedback">
+					            <input type="text"  class="form-control" name="">
+					            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+					            </div>
+
+					        </div>
+					        <div class="form-group">
+					            <span class="col-sm-2" style="font-weight: bold">密码</span>
+					            <div class="col-sm-10 has-feedback">
+					            <input type="password"  class="form-control" name="">
+					            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+					            </div>
+					        </div>
+					        
+					        <button class="form-control btn btn-danger">提交</button>
+					    </form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+ <div class="tab-pane fade active" id="div2">
+ <div class="col-md-2 col-xs-12 ee">
+ <nav class="navbar-left text-left ">
+ <div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#myy" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>订单管理2</a>
+		</div>
+		<div class="panel-collapse collapse" id="myy">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my2y" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>员工管理2</a>
+		</div>
+		<div class="panel-collapse collapse" id="my2y">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my3y" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>会员管理2</a>
+		</div>
+		<div class="panel-collapse collapse" id="my3y">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+ </nav>
+</div>
+
+
+
+
+ <div class="col-md-10 col-xs-12">
+
+ <div class="panel panel-default ">
+		<div class="panel-heading">
+		<form class="form-inline">
+			<input type="text" name="" class="form-control" placeholder="请输入订单号">
+			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>点击查询</button>
+		</form>
+		</div>
+			
+			<table class="table table-bordered text-center table-responsive">	
+				<tr>
+					<td>订单号1111</td>
+					<td>产品名称</td>
+					<td>客户名称</td>
+					<td>性别</td>
+					<td>电话</td>
+					<td>地址</td>
+					<td>车牌号码</td>
+					<td>车型</td>
+					<td>车身颜色</td>
+					<td>预约时间</td>
+					<td>下单时间</td>
+					<td>订单状态</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#" id="y1">【分配】</a><a  href="#" id="y2">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td colspan="13">
+						<ul class="pager">
+							<li class="active"><a href="#div1" data-toggle="tab">上一页</a></li>
+			<li><a href="#div1" data-toggle="tab">1</a></li>
+			<li ><a href="#div2" data-toggle="tab">2</a></li>
+			<li><a href="#div3" data-toggle="tab">3</a></li>
+			<li><a href="#div5" data-toggle="tab">下一页</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		
+	</div>
+	</div>
+	</div>
+	
+	 <div class="tab-pane fade  active" id="div3">
+ <div class="col-md-2 col-xs-12 ee">
+ <nav class="navbar-left text-left ">
+ <div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#myyy" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>订单管理3</a>
+		</div>
+		<div class="panel-collapse collapse" id="myyy">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my2yy" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>员工管理3</a>
+		</div>
+		<div class="panel-collapse collapse" id="my2yy">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="panel panel-default yy">
+		<div class="panel-heading">
+			<a href="#my3yy" data-toggle="collapse" style="font-weight: bold;text-decoration: none;"><span class="glyphicon glyphicon-collapse-down"></span>会员管理3</a>
+		</div>
+		<div class="panel-collapse collapse" id="my3yy">
+		<div class="panel-body">
+			<ul>
+				<li><a href=""><span class="glyphicon glyphicon-th-list"></span>订单列表</a></li>
+				<li><a href=""><span class="glyphicon glyphicon-plus"></span>增加订单</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+ </nav>
+</div>
+
+
+
+
+ <div class="col-md-10 col-xs-12">
+
+ <div class="panel panel-default ">
+		<div class="panel-heading">
+		<form class="form-inline">
+			<input type="text" name="" class="form-control" placeholder="请输入订单号">
+			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>点击查询</button>
+		</form>
+		</div>
+			
+			<table class="table table-bordered text-center table-responsive">	
+				<tr>
+					<td>订单号222222</td>
+					<td>产品名称</td>
+					<td>客户名称</td>
+					<td>性别</td>
+					<td>电话</td>
+					<td>地址</td>
+					<td>车牌号码</td>
+					<td>车型</td>
+					<td>车身颜色</td>
+					<td>预约时间</td>
+					<td>下单时间</td>
+					<td>订单状态</td>
+					<td>操作</td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#" id="y11">【分配】</a><a  href="#" id="y22">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td>L12345678</td>
+					<td>上门辅导</td>
+					<td>李先生</td>
+					<td>男</td>
+					<td>15234567</td>
+					<td>唐家一号</td>
+					<td>京1234</td>
+					<td>奔驰123</td>
+					<td>白色</td>
+					<td>2015-2-3</td>
+					<td>2015-5-3</td>
+					<td>未分配</td>
+					<td><a href="#">【分配】</a><a href="#">【未分配】</a></td>
+				</tr>
+				<tr>
+					<td colspan="13">
+						<ul class="pager">
+							<li class="active"><a href="#div1" data-toggle="tab">上一页</a></li>
+			<li><a href="#div1" data-toggle="tab">1</a></li>
+			<li ><a href="#div2" data-toggle="tab">2</a></li>
+			<li><a href="#div3" data-toggle="tab">3</a></li>
+			<li><a href="#div5" data-toggle="tab">下一页</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("tr:lt(5) td a").click(function(){
+			$("#modal1").modal({
+				backdrop:'static',//鼠标点击空白处模态框不会关闭
+				keyboard:true,
+				show:true,
+			});
+		});				
+	})
+</script>
+</body>
+</html>

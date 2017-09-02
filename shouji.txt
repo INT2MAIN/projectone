@@ -1,0 +1,3 @@
+设计成响应式就可以了，在你网页的<head></head>标签之间加入：
+<meta name="viewport"
+content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />

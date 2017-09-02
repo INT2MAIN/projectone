@@ -1,0 +1,84 @@
+方法	  描述
+1.bind()	向匹配元素附加一个或更多事件处理器
+2.blur()	触发、或将函数绑定到指定元素的 blur 事件
+3.change()	触发、或将函数绑定到指定元素的 change 事件
+4.click()	触发、或将函数绑定到指定元素的 click 事件
+5.dblclick()	触发、或将函数绑定到指定元素的 double click 事件
+6.delegate()	向匹配元素的当前或未来的子元素附加一个或多个事件处理器{
+$("div").delegate("button","click",function(){
+  $("p").slideToggle(); 隐藏或显示之间切换
+});
+}
+7.die()	移除所有通过 live() 函数添加的事件处理程序。{
+$("p").live("click",function(){
+   $(this).slideToggle();
+ });
+ $("button").click(function(){
+   $("p").die();让live的方法失效
+ });
+}
+8.error()	触发、或将函数绑定到指定元素的 error 事件{
+$(document).ready(function(){
+  $("img").error(function(){
+    $("img").replaceWith("<p><b>图片未加载！</b></p>");replaceWith,用来代替未加载的图片
+  });
+});
+}
+9.event.isDefaultPrevented()	返回 event 对象上是否调用了 event.preventDefault()。
+10.event.pageX	相对于文档左边缘的鼠标位置。
+11.event.pageY	相对于文档上边缘的鼠标位置。{
+$(document).ready(function(){
+  $(document).mousemove(function(e){
+    $("span").text("X: " + e.pageX + ", Y: " + e.pageY);
+  });
+});
+}
+12.event.preventDefault()	阻止事件的默认动作。
+13.event.result	包含由被指定事件触发的事件处理器返回的最后一个值。
+14.event.target	触发该事件的 DOM 元素。
+15.event.timeStamp	该属性返回从 1970 年 1 月 1 日到事件发生时的毫秒数。
+16.event.type	描述事件的类型。
+17.event.which	指示按了哪个键或按钮。
+18.focus()	触发、或将函数绑定到指定元素的 focus 事件
+19.keydown()	触发、或将函数绑定到指定元素的 key down 事件
+20.keypress()	触发、或将函数绑定到指定元素的 key press 事件
+21.keyup()	触发、或将函数绑定到指定元素的 key up 事件
+22.live()	为当前或未来的匹配元素添加一个或多个事件处理器
+23.load()	触发、或将函数绑定到指定元素的 load 事件
+24.mousedown()	触发、或将函数绑定到指定元素的 mouse down 事件
+25.mouseenter()	触发、或将函数绑定到指定元素的 mouse enter 事件
+26.mouseleave()	触发、或将函数绑定到指定元素的 mouse leave 事件
+27.mousemove()	触发、或将函数绑定到指定元素的 mouse move 事件
+28.mouseout()	触发、或将函数绑定到指定元素的 mouse out 事件
+29.mouseover()	触发、或将函数绑定到指定元素的 mouse over 事件
+30.mouseup()	触发、或将函数绑定到指定元素的 mouse up 事件
+31.one()	向匹配元素添加事件处理器。每个元素只能触发一次该处理器。
+32.ready()	文档就绪事件（当 HTML 文档就绪可用时）
+33.resize()	触发、或将函数绑定到指定元素的 resize 事件
+34.scroll()	触发、或将函数绑定到指定元素的 scroll 事件
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("div").scrollTop(100);
+  });
+  $(".btn2").click(function(){
+    alert($("div").scrollTop()+" px");
+  });
+});
+scrollTop（100）设定内容在局里网页真实顶部局里100px
+
+35.select()	触发、或将函数绑定到指定元素的 select 事件
+36.submit()	触发、或将函数绑定到指定元素的 submit 事件
+37.toggle()	绑定两个或多个事件处理器函数，当发生轮流的 click 事件时执行。{
+$("button").toggle(function(){
+    $("body").css("background-color","green");},用逗号隔开各个方法
+    function(){
+    $("body").css("background-color","red");},
+    function(){
+    $("body").css("background-color","yellow");}
+  );
+}点击切换背景颜色
+38.trigger()	所有匹配元素的指定事件
+39.triggerHandler()	第一个被匹配元素的指定事件
+40.unbind()	从匹配元素移除一个被添加的事件处理器
+41.undelegate()	从匹配元素移除一个被添加的事件处理器，现在或将来
+42.unload()	触发、或将函数绑定到指定元素的 unload 事件

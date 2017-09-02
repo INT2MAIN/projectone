@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+input{
+
+}
+    </style>
+  </head>
+  <body>
+    <form novalidate="true">/*加载form表单上面，使html5的表单失去验证性*/
+      <p>必须要添加form,否则单独的input没有输入错误提醒，<br/>可以结合asp或php后台代码得到数据</p>
+    <input type="url" name="url" value="" required="none">
+    <input type="submit" name="" value="提交"><br/>
+    <input type="date" name="" value=""><br/>
+    <input type="month" name="" value=""><br/>
+    <input type="week" name="" value=""><br/>
+    <input type="time" name="" value=""><br/>
+    <input type="datetime" name="" value=""><br/>
+    <input type="datetime-local" name="" value=""><br/>
+    <input type="search" name="" value="">
+  </form>
+  </body>
+</html>

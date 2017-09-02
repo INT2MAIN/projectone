@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="layui-v1.0.9_rls/layui/css/layui.css"> -->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css_plug/animate.css">
+	<link rel="stylesheet" type="text/css" href="bestweb.css">
+    <link rel="stylesheet" type="text/css" href="bestweb2.css">  
+    <link rel="stylesheet" type="text/css" href="bestweb_Myself.css">
+    <link rel="stylesheet" type="text/css" href="bestweb_Myself2.css">
+	<script src="./jquery-3.2.1.min.js">
+    </script>
+    <script type="text/javascript" src="bestweb.js"></script>
+</head>
+<body>
+<!-- 导航栏 -->
+<div class="wrap col-xs-12">
+	<div class="row">
+		<div class="col-sm-2 col-xs-3 row1 ">
+		<div class="row11">
+		<i class="fa fa-meetup fa-3x" aria-hidden="true"></i>
+		<span class="fontstyle">Logo</span>
+		</div>
+		</div>
+		<!-- <a href="#menu" class="menu1" id="menu1"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a> -->
+		<div class="col-sm-7 col-xs-6">			
+					
+		    <ul class="nav nav-pills ">
+		      <li ><a href="bestweb.html" >Home<span class="caret"></span></a>
+				<!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+				  <li><a tabindex="-1" href="#">Regular link</a></li>
+				  <li><a tabindex="-1" href="#">Disabled link</a></li>
+				  <li><a tabindex="-1" href="#">Regular link</a></li>
+				  <li><a tabindex="-1" href="#">Disabled link</a></li>
+				  <li class="divider"></li>
+				  <li class="dropdown-submenu">
+				  <a tabindex="-1" href="#">Another link</a>
+					<ul class="dropdown-menu">
+					  <li><a tabindex="-1" href="#">Action</a></li>
+					  <li><a tabindex="-1" href="#">Another action</a></li>
+					  <li><a tabindex="-1" href="#">Something else here</a></li>
+					  <li class="divider"></li>
+					  <li><a tabindex="-1" href="#">Separated link</a></li>
+					</ul>
+				  </li>
+				</ul> -->
+		      </li>
+		      <li class="active"><a href="#">Myself</a></li>
+		      <li><a href="#">School</a></li>
+
+		    </ul>
+ 
+			
+		</div>
+		<div class="col-sm-3 col-xs-3">
+		<span id="btn">Login></span>
+		<div class="modal fade" id="modal1" tabindex="-1">
+		<div class="modal-dialog " style="margin:60px auto;">
+			
+			<div class="modal-content">
+				<div class="modal-header alert alert-danger">
+					<!-- <h3>我是一个提示框
+					<span class="glyphicon glyphicon-remove  pull-right" data-dismiss="modal" ></span></h3> -->
+					<h3 class="login-head">User Login</h3>
+					<!-- <span class="glyphicon glyphicon-remove  pull-right" data-dismiss="modal" ></span> -->
+					
+				</div>
+				<div class="modal-body">
+					<form id="formlogin">
+						<div class="form-group">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+					    </div>
+					  	<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+					    </div>
+					    <div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+					    </div>
+					    <div class="modal-footer">
+					  	<input class="btn btn-success" type="submit" value="Login" />
+						<button class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</form>
+				</div>
+				
+					
+				
+			</div>
+		</div>
+	    </div>
+		</div>
+	</div>
+</div>
+<!-- 图片部分 -->
+<div class="container-img col-sm-12 col-xs-12">
+	<div class="bg-img col-sm-12 col-xs-12">
+		
+	</div>
+	<div class="bg-blur col-sm-12 col-xs-12">
+		
+	</div>
+	<div class="bg-blur-box">
+			<div class="bg-blur-left col-sm-6 col-xs-12" >
+				<h3>
+				<i class="fa fa-heart animated pulse2 infinite" aria-hidden="true" ></i> 
+				<span>Personal information</span>
+				</h3>
+				<hr  class="hr_style" />
+				<div class="bg-text">
+				<ul>
+				<li>
+					<span class="bg-th">NAME</span> 
+					<span class="bg-td">ZHONGJIAXIN</span>
+				</li>
+				<li >
+					<span class="bg-th">PHONE</span> 
+					<span class="bg-td">18280327015</span>
+				</li>
+				<li>
+					<span class="bg-th">EMAIL</span> 
+					<span class="bg-td">97469686@qq.com</span>
+				</li>
+				<li>
+					<span class="bg-th">BIRTHDAY</span> 
+					<span class="bg-td">1995-08-25</span>
+				</li>	
+				<li>
+					<span class="bg-th">ADDRESS</span> 
+					<span class="bg-td">Chengdu shuangliu</span>
+				</li>
+				
+				</ul>
+				</div>
+			</div>
+			<div class="bg-blur-right col-sm-6 col-xs-12">
+				<img src="img/small-myself.png" >
+			</div>
+	</div>
+</div>
+
+
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js">
+		
+	</script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="layui-v1.0.9_rls/layui/layui.js"></script> 
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// $(".bg-blur-box").mouseover(function(){
+			$(".hr_style").animate({width:'100%'});
+		// });
+	})
+</script> 
+</body>
+</html>

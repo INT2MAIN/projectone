@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./jquery-3.2.1.min.js">
+
+    </script>
+    <style>
+    .one{
+      width:200px;
+      height: 200px;
+      background-color: #bb4646;
+      position:absolute;
+      /*-webkit-transition:transform 5s;*/
+      /*-webkit-transform-origin: 80% 20%;
+      transform-origin: 80% 20%;*/
+      animation:my 2s infinite;
+      animation: yes 1s;
+      webkit-animation:my 2s;
+      padding:20px 20px;
+
+    }
+
+    /* animation:动画名称  一个周期的时间  速度去曲线（ease linear） 何时开始（延迟时间） 播放次数（1,2,3，infinite(循环播放)）
+    规定动画是否在下一个周期逆向播放（默认normal,逆向alternate） 规定动画是否正在运行或暂停（默认running）
+    例：animation:my 5s linear 2s infinite alternate;
+    */
+    /*.one:hover{
+      -webkit-transform:rotateX(360deg);
+    }*/
+    @keyframes my{
+      0%{background-color:#bb4646;}
+        50%{background-color:#c89191;}
+          100%{background-color:#bb4646;transform: none}
+    }
+    @keyframes yes{
+      0%{
+        transForm:translateX(-200px) rotateZ(-90deg);
+      }
+      100%{
+        transfrom:none;
+      }
+    }
+    </style>
+    <script>
+      $(document).ready(function(){
+       $("#two").click(function(){
+        $(".one").animate({left:'50px',top:'50px',width:'150px',height:'150px',fontSize:'34px'},500);//记住时间是ms毫秒单位。
+        // $(".one").animate({fontSize:"34px"});
+       });
+
+      })
+    </script>
+  </head>
+  <body>
+  <button id="two">
+      开始动画
+    </button>
+    <div class="one" id="one">
+      <p>Hello</p>
+    </div>
+
+  </body>
+</html>

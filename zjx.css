@@ -1,0 +1,28 @@
+.q1{
+    border: 3px solid #ccc;
+    padding: 5px 20px;
+}
+.header {
+    margin-top: 12px;
+}
+.header a {
+    color: #337ab7;
+    text-decoration: underline;
+    letter-spacing: 2px;
+
+}
+#div1 table {
+    background-color: transparent;
+    width: 95%;
+    margin: 20px 30px;
+}
+#div1 table tr td:nth-child(1){
+	text-align: right;
+}
+#div1 td {
+ 
+}
+.table>tbody>tr>td {
+    
+     border-top: none; 
+}

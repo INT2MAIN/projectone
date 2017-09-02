@@ -1,0 +1,64 @@
+@charset "utf-8";
+/*top*/
+.top_box{
+	width:100%;
+	height:110px;
+	position:relative;
+	background:#fbfbfb;
+	border-bottom:1px solid #d7d7d7;
+	}
+.top_up{
+	height:46px;
+	text-align:right;
+	line-height:46px;
+	padding-right:10px;
+	background:url(../images/header_t_bg.jpg) repeat-x;
+	}
+.top_up a{
+	float:right;
+	display:block;
+	color:#010101;
+	margin-left:10px;
+	}
+.top_up a.gly_ico,.top_up a.help_ico{
+	padding-left:20px;
+	background:url(../images/gly_ico.png) left center no-repeat;
+	}
+.top_up a.help_ico{
+	background:url(../images/help_ico.jpg) left center no-repeat;
+	}
+.top_down{
+	height:33px;
+	background:url(../images/menu_bg.jpg) repeat-x;
+	}
+.top_down ul{
+	padding-left:180px;
+	}
+.top_down ul li{
+	float:left;
+	width:74px;
+	height:33px;
+	text-align:center;
+	line-height:33px;
+	margin:0px 5px;
+	}
+.top_down ul li a{
+	width:74px;
+	height:33px;
+	display:block;
+	float:left;
+	color:#fff;
+	}
+.top_down ul li a:hover,.top_down ul li a.mlcurrent{
+	background:url(../images/menu_lihoverbg.jpg);
+	}
+.top_box p{
+	height:31px;
+	line-height:31px;
+	}
+.top_box p span{
+	float:right;
+	}
+.top_box p span input{
+	margin-right:5px;
+	}

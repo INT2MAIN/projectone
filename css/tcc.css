@@ -1,0 +1,187 @@
+﻿.tcc_box{
+	position:relative;
+	z-index:500;
+	}
+.tcc_box a{
+	color:#0075b1;
+	}
+.tcc_box a:hover{
+	color:#fa5800;
+	}
+/*品牌弹出层开始*/
+.pptext_nav{
+	width:140px;
+	height:18px;
+	line-height:18px;
+	padding:0 5px;
+	border:1px solid #cecece;
+	background:url(../images/text_bg.jpg) repeat-x;
+	}
+.pptext{
+	width:105px;
+	height:15px;
+	line-height:15px;
+	margin-right:5px;
+	border:0px;
+	outline:none;
+	}
+.pptext_nav span{
+	float:right;
+	}
+.qinfchu_bt{
+	width:13px;
+	height:14px;
+	cursor:pointer;
+	border:none;
+	margin-top:2px;
+	background:url(../images/del_ico.jpg);
+	}
+#zindexDiv{
+	position:absolute;
+	z-index:10;
+	width:500px;	
+}
+.pro_lbpp_tcc{
+	width:500px;
+	position:absolute;
+	z-index:10000;
+	display:none;
+	margin:-175px 0px 0px -104px;
+	background:#fafafa;
+	left: 105px;
+	top:200px;
+	}
+.pro_lbpp_tcc_nav{
+	position:absolute;
+	z-index:9000;
+	display:block;
+	background:#fafafa;
+	}
+.pro_lbpp_tcc_title{
+	height:30px;
+	width:488px;
+	line-height:30px;
+	padding-left:10px;
+	color:#666666;
+	text-align:left;
+	overflow:hidden;
+	border:1px solid #dfdfdf;
+	border-bottom:none;
+	background:#fdfcfc;
+	}
+.pro_lbpp_tcc_title span{
+	float:right;
+	width:14px;
+	height:14px;
+	display:inline;
+	}
+.pp_xx_nav{
+	width:478px;
+	padding:10px;
+	border:1px solid #cdcbcb;
+	border-top:none;
+	}
+.pp_xx_nav ul{
+	display:table;
+	}
+.pp_xx_nav ul li{
+	float:left;
+	margin:5px;
+	*margin:0px 5px;
+	}
+.pp_xx_nav ul li a{
+	padding:3px 10px;
+	color:#666666;
+	line-height:20px;
+	word-break:keep-all;
+	white-space:nowrap;
+	}
+.pp_xx_nav ul li a:hover{
+	color:#0075b1;
+	background:#f8ef85;
+	}
+/*商品信息弹出层*/
+.pro_info_tcc{
+	width:900px;
+	position:absolute;
+	z-index:999999;
+	}
+.pro_lbkcx_tcc_title{
+	height:14px;
+	}
+.pro_lbkcx_tcc_title span{
+	float:right;
+	width:14px;
+	height:14px;
+	*text-align:right;
+	}
+.close{
+	width:14px;
+	height:14px;
+	cursor:pointer;
+	border:none;
+	background:url(../images/close_bt.gif);
+	}
+.pro_info_tcc table{
+	width:100%;
+	border-top:1px solid #cdcbcb;
+	border-left:1px solid #cdcbcb;
+	}
+.pro_info_tcc table td,.pro_info_tcc table th{
+	color:#333333;
+	line-height:30px;
+	text-align:center;
+	border-right:1px solid #cdcbcb;
+	border-bottom:1px solid #cdcbcb;
+	}
+.pro_info_tcc table th{
+	color:#333333;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	}
+.pro_info_tcc table td img{
+	width:85px;
+	padding:2px;
+	margin:5px;
+	border:1px solid #e8e7e7;
+	}
+.pro_info_tcc table td a{
+	color:#0075b1;
+	}
+.pro_info_tcc table td a:hover{
+	color:#fa5800;
+	}
+.pro_info_tcc table td b{
+	color:#d30d0d;
+	font-weight:normal;
+	}
+/*购买人信息弹出层*/
+.gmr_info_tcc{
+	width:300px;
+	background:#fafafa;
+	border:1px solid #dfdfdf;
+	left:160px;
+	top:-80px;
+	position:absolute;
+	}
+.gmr_info_tcc table{
+	width:100%;
+	}
+.gmr_info_tcc table td{
+	line-height:30px;
+	text-align:left;
+	padding:0 5px;
+	color:#333333;
+}
+.gmr_info_tcc table td u{
+	position:relative;
+	text-decoration:none;
+	}
+.gmr_info_tcc table td span{
+	text-align:right;
+	display:block;
+	}
+.gmr_info_tcc table td b{
+	color:#d30d0d;
+	font-weight:normal;
+	}

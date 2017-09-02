@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>border-radius,border-image,box-shadow</title>
+    <style media="screen">
+      .one{
+        border-radius:20px;
+        /*border-radius:15px/15px;  /前面的15px是水平方向半径，/后面的15px是垂直方向的半径*/
+        /**
+         *text-shadow是给文本添加阴影效果，box-shadow是给元素块添加周边阴影效果
+          box-shadow: h-shadow v-shadow blur spread color inset;
+         *box-shadow:[inset] x-offset y-offset blur-radius spread-radius color
+                     投影方式 X偏移量  Y偏移量   阴影模糊半径 阴影扩展半径  阴影颜色
+         */
+
+        background-color: #eee;
+        width:50%;
+        height: 100px;
+        padding:40px;
+        border:2px solid #ccc;
+      }
+      #two{
+        border:15px solid transparent;
+      	padding:10px 20px;
+        -webkit-border-image:url(./img/border.png) 30 30 round;
+        border-image:url(./img/border.png) 30 30 round;
+        /*round 是重复图片边缘部分，stretch是拉伸图片*/
+        width:200px;
+      }
+
+
+
+  #round
+  {
+  	-webkit-border-image:url(./img/border.png) 30 30 round; /* Safari 5 and older */
+  	-o-border-image:url(./img/border.png) 30 30 round; /* Opera */
+  	border-image:url(./img/border.png) 30 30 round;
+  }
+
+  #stretch
+  {
+  	-webkit-border-image:url(./img/border.png) 30 30 stretch; /* Safari 5 and older */
+  	-o-border-image:url(./img/border.png) 30 30 stretch; /* Opera */
+  	border-image:url(./img/border.png) 30 30 stretch;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <p>this is one message</p>
+    </div>
+    <div id="two">
+      <p>this is one message</p>
+    </div>
+
+</style>
+</head>
+<body>
+
+<p><b>注意: </b> Internet Explorer 不支持 border-image 属性。</p>
+<p> border-image 属性用于设置图片的边框。</p>
+
+<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+  </body>
+</html>

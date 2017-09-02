@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon">//1  1,2和2,3均可，收藏图标  在线图标生成：http://www.atool.org/ico.php -->
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="/favicon.ico"/>
+    <script type="text/javascript">//canvas不具备画画的能力，需要在JavaScript里面进行绘制
+    function cnvs_getCoordinates(e)//e相当于鼠标指针，作为一个参数
+    {
+    x=e.clientX;
+    y=e.clientY;
+    document.getElementById("xycoordinates").innerHTML="Coordinates: (" + x + "," + y + ")";
+    }
+
+    function cnvs_clearCoordinates()
+    {
+    document.getElementById("xycoordinates").innerHTML="";
+    }
+    </script>
+<style media="screen">
+  #canvas{
+    border:1px solid #000;
+  }
+</style>
+  </head>
+  <body>
+    <div id="coordiv" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()"></div>
+    <br />
+    <br />
+    <br />
+    <div id="xycoordinates"></div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .one{
+        height: 200px;
+        width: 200px;
+        margin: 30px;
+        display: inline-block;
+        background: -webkit-linear-gradient(0deg,red,blue);//没有加-webkit时0角度是从下往上的颜色，加了以后，从左往右
+      }
+      .two{
+        height: 200px;
+        width: 200px;
+        margin: 30px;
+        display: inline-block;
+        background: -webkit-linear-gradient(90deg,red,blue);//在0角度的基础上，逆时针转动90度
+      }
+      .three{
+        height: 200px;
+        width: 200px;
+        margin: 30px;
+        display: inline-block;
+        background: -webkit-linear-gradient(135deg,red,blue);//在0角度的基础上，逆时针转动135度
+      }
+      .one p,.two p,.three p{
+        text-align: center;
+        line-height:200px;
+        margin: 0;
+      }
+      .my{
+      font-size: 30px;
+      text-shadow: 8px 5px 5px red;
+      }
+    </style>
+  </head>
+  <body>
+    <p   class="my">this is first</p>
+    <div class="one">
+      <p>转动0角度</p>
+    </div>
+    <div class="two">
+        <p>转动90角度</p>
+    </div>
+    <div class="three">
+        <p>转动135角度</p>
+    </div>
+  </body>
+</html>

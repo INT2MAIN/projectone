@@ -1,0 +1,63 @@
+/*登录开始*/
+html{
+    font-family:"微软雅黑", Arial, Helvetica, sans-serif;
+	background:url(../images/loginbgpp.jpg) repeat-x #000100;
+}
+body{
+	background:url(../images/loginbg.jpg) center top no-repeat;
+}
+.logintop{
+	color:#FFF;
+	height:31px;
+	padding:0 10px;
+	line-height:31px;
+}
+.logintop span{
+	float:right;
+}
+.logintop span a{
+	color:#FFF;
+}
+.loginbox{
+	width:819px;
+	height:310px;
+	padding-top:300px;
+	margin:0 auto;
+}
+.logintxtbg{
+	width:702px;
+	float:left;
+	height:131px;
+	padding:40px 0 0 30px;
+	background:url(../images/logintxtbg.png) no-repeat;
+}
+.logintxtbg span{
+	float:left;
+}
+.logintxtbg img{
+	margin-left:10px;
+}
+.logintxtbg input{
+	height:26px;
+	line-height:26px;
+	border:1px solid #d3d3d3;
+	background:url(../images/txtbg.jpg) top repeat-x #FFF;
+}
+.loginbtn{
+	width:87px;
+	float:left;
+	padding-top:10px;
+}
+.loginbtn input{
+	width:87px;
+	height:87px;
+	border:none;
+	cursor:pointer;
+	background:url(../images/loginbtn.png) no-repeat;
+}
+.loginbottom{
+	height:80px;
+	color:#fff;
+	text-align:center;
+}
+/*登录结束*/

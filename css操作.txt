@@ -1,0 +1,43 @@
+jQuery CSS 操作函数
+下面列出的这些方法设置或返回元素的 CSS 相关属性。
+CSS 属性	描述
+css()	设置或返回匹配元素的样式属性。
+height()	设置或返回匹配元素的高度。
+offset()	返回第一个匹配元素相对于文档的位置。
+offsetParent()	返回最近的定位祖先元素。
+position()	返回第一个匹配元素相对于父元素的位置。
+scrollLeft()	设置或返回匹配元素相对滚动条左侧的偏移。
+scrollTop()	设置或返回匹配元素相对滚动条顶部的偏移。
+width()	设置或返回匹配元素的宽度。
+
+
+css()	设置或返回匹配元素的样式属性。
+$(".btn1").click(function(){
+  $("p").css("color","red");
+});
+
+height()	设置或返回匹配元素的高度。
+$(document).ready(function(){
+ $(".btn1").click(function(){
+   $("p").height(50);
+ });
+});
+
+offset()	返回第一个匹配元素相对于文档的位置。
+$(document).ready(function(){
+  $("button").click(function(){
+    x=$("p").offset();
+    $("#span1").text(x.left);
+    $("#span2").text(x.top);
+  });
+});
+
+scrollTop()	设置或返回匹配元素相对滚动条顶部的偏移。
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("div").scrollTop(100);
+  });
+  $(".btn2").click(function(){
+    alert($("div").scrollTop()+" px");
+  });
+});

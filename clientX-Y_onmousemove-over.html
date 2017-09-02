@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #one{
+        width:200px;
+        height:200px;
+        border:1px solid #000;
+        float: left;
+      }
+      #two{
+        width:200px;
+        height:auto;
+      }
+    </style>
+    <script type="text/javascript">
+      function a(e){
+         x=e.clientX;
+         y=e.clientY;
+        document.getElementById("two").innerHTML="坐标为："+"("+x+","+y+")";
+      }
+      function b(){
+        document.getElementById("two").innerHTML="";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="one" onmousemove="a(event)">
+      <p>onmousemove与onmouseover的显著区别，前者只要鼠标移动就会触发，后者是在目标上时出发，需要触发的话
+就要移出目标</p>
+    </div>
+    <div id="two" onmouseout="b()">
+
+    </div>
+  </body>
+</html>

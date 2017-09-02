@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .aa{
+        width:250px;
+        height:160px;
+        border:1px solid #000;
+        margin:20px;
+      }
+      *{padding: 0;
+        margin:0;
+      }
+      img{
+        margin: 20px;
+      }
+    </style>
+    <!-- <script type="text/javascript">
+      function  allowDrop(event){
+        event.preventDefault();
+      }
+      function drop(event){
+        event.preventDefault();
+        var data=event.dataTransfer.getData("Text");
+        event.target.appendChild(document.getElementById("data"))
+      }
+      function drag(event){
+        event.dataTransfer.setData("Text",event.target.id);
+      }
+    </script> -->
+
+    <script type="text/javascript">
+    function allowDrop(ev)
+    {
+    ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+    ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+  </head>
+  <body>
+
+      <p>这是一个拖拉事件HTNL5</p>
+      <div class="aa" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="./img/breathe-again_1280x800.jpg" id="drag1" width="200px" height="auto" alt="" draggable="true" ondragstart="drag(event)"/>
+      </div>
+      <div class="aa" ondrop="drop(event)" ondragover="allowDrop(event)" class="">
+
+      </div>
+  </body>
+</html>

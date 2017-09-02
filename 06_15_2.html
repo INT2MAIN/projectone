@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+	<meta  name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	
+.carousel-fade .carousel-inner .item{  
+    opacity:0.5;  
+    -webkit-transition-property:opacity ;  
+    -moz-transition-property:opacity ;  
+    -ms-transition-property:opacity ;  
+    -o-transition-property:opacity ;  
+    transition-property:opacity ;
+}
+.carousel-fade .carousel-inner .active{  
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{  
+    left: 0;  
+    opacity: 0.5;
+}
+.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+	
+	<div class="carousel slide carousel-fade " data-ride="carousel"   id="myslide">
+	<!-- 标识符部分 -->
+		<div >
+			<ul class="carousel-indicators">
+				<li class="active" data-target="#myslide" data-slide-to="0"></li>
+				<li  data-target="#myslide" data-slide-to="1"></li>
+				<li  data-target="#myslide" data-slide-to="2"></li>
+			</ul>
+		</div>
+		<!-- 图片与图片对应的标题 -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/qq.jpg">
+				<div class="carousel-caption">
+					first
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/ww.png">
+				<div class="carousel-caption">
+					first
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/ee.jpg">
+				<div class="carousel-caption">
+					first
+				</div>
+			</div>
+		</div>
+		<!-- 左右箭头 -->
+		<a class="left carousel-control" href="#myslide" data-target="#myslide" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#myslide" data-target="#myslide" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$("#myslide").carousel({
+			interval:2000
+		})
+	})
+	//也可以直接<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel"  data-interval="2000">
+</script>
+</body>
+</html>

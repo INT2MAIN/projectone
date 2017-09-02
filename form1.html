@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./jquery-3.2.1.min.js">
+    </script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).addClass("you");
+        $(this).removeClass("you2");
+      });
+      $("input").blur(function(){
+        $(this).addClass("you2");
+        $(this).removeClass("you");
+      });
+    })
+    </script>
+    
+<style media="screen">
+form {
+  margin: 0 auto;
+  width: 600px;
+  position: relative;
+  top: 20px;
+}
+.checkbox{
+  display: inline-block;
+  padding-right: 22px;
+}
+.btn{
+  display: block;
+  margin-top:20px;
+}
+.radio{
+  display: inline-block;
+}
+.you{
+  animation: you 0.18s;
+  animation-fill-mode: forwards;
+}
+.you2{
+  animation: you2 0.18s;
+  animation-fill-mode: forwards;
+}
+ input{
+  width:300px;
+}
+
+@keyframes t {
+  to{
+    width:100px;
+  }
+}
+@keyframes you {
+  to{
+    border-bottom: 2px solid #2486bd;
+  }
+}
+@keyframes you2 {
+  to{
+    border-bottom:1px solid #ccc;
+  }
+}
+</style>
+
+  </head>
+  <body>
+    <div  class="m">
+    <form  class="one">
+    <fieldset>
+        <legend>Regist</legend>
+        <label for="">账号:</label>
+        <input  class="ee"type="text" name="" value="" placeholder="your username">
+        <label for="">真实姓名:</label>
+        <input type="text" name="" value="" placeholder="your name">
+        <label for="">密码:</label>
+        <input type="text" name="" value="" placeholder="your password">
+        <label for="">确认密码:</label>
+        <input type="text" name="" value="" placeholder="sure password ">
+        
+        <label for="">头像:</label>
+        <input type="file" name="" value="" placeholder="sure password ">
+        <label for="">sex:</label>
+        <label for="" class="radio">
+        <input type="radio" name="b" value="men">男
+        </label>
+        <label for="" class="radio">
+        <input type="radio" name="b" value="flemen">女
+        </label>
+        </label>
+        <button type="submit" class="btn  btn-primary">Submit</button>
+    </fieldset>
+  </form>
+</div>
+  </body>
+
+</html>

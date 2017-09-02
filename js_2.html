@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>改变html图片</title>
+
+  </head>
+  <body>
+    <img src="./img/breathe-again_1280x800.jpg" id="img"alt="" onclick="change()" width="300" height="300" >
+  </body>
+  <script type="text/javascript">
+    function change(){
+      var a=document.getElementById("img");
+      if(a.src.match("bre")){
+        a.src="./img/infinite_1280x800.jpg";
+      }
+      else{
+        a.src="./img/breathe-again_1280x800.jpg";
+      }
+
+    }
+    var cars=["saab","volvo","bmn"];//三种数组写法
+
+    var cars=new Array();
+    cars[0]="saab";
+    cars[1]="volvo";
+    cars[2]="bmn";
+
+    var cars= new Array("saab","volvo","bmn");
+
+    var person={
+      firstname:"bob",//逗号分隔开
+      lastname="doe",
+      fullName:function(){
+        return this.firstname+" "+this.lastname;
+      }//对象函数,名字随便取
+    };//对象
+    document.getElementById("id").innerHTML=person.fullName;
+    name=person.lastname;
+    name=person["lastname"];//对象属性的两种寻址方式。
+
+
+
+  </script>
+</html>

@@ -1,0 +1,54 @@
+ body{
+      background: url('./img/bb2.jpg') no-repeat;
+      background-size: 100% auto;
+    }
+    .bg {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 210px 0 0;
+}
+i.fa.fa-5x.fa-user-circle {
+    position: relative;
+    left: 135px;
+    bottom: 15px;
+    color: #123b6b;
+}
+span {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.two {
+    width: 450px;
+    height: 200px;
+    line-height: 52px;
+}
+button.btn.btn-primary {
+    left: 80px;
+    position: relative;
+}
+button.btn.btn-inverse {
+    position: relative;
+    left: 120px;
+    width: 70px;
+}
+span#zz1 {
+    width: 100px;
+    height: 100px;
+}
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+    border-color: rgba(236, 51, 38, 0.48);
+    -webkit-box-shadow: 0 0 6px #f8b9b7;
+    -moz-box-shadow: 0 0 6px #f8b9b7;
+    box-shadow: 1px 1px 6px #d2514d;
+}
+
+.h {
+    padding: 10px 20px;
+    transition: color 3s,left 3s;
+
+.h:hover {
+    color: #628bae;
+    left:60px;
+}

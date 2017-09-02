@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    <script type="text/javascript">
+    function my(){//这是函数，只有在输出流中使用document.write,如果在文档已经加载后使用，将会覆盖整个文档
+      document.write("<h1>这是一个标题</h1>")
+    }
+    document.write("<h1>这是一个标题</h1>")//这属于HTML输出流
+    </script>
+  </head>
+  <body>
+    <p onclick="my()">我们一起来看看</p><!--用onclick实现文档加载后再使用，将会覆盖整个文档-->
+  </body>
+</html>

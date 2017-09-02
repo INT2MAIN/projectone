@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查看订单操作日志</title>
+<link rel="stylesheet" type="text/css" href="../css/all.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<!--当前位置开始-->
+<div class="dq_weizhi_nav">
+    <p>当前位置：<a href="#">管理中心</a> &gt; <a href="#">订单管理</a> &gt;<a class="dqwz"> 查看订单</a></p>
+    </div>
+<!--当前位置结束-->
+<!--查看订单操作日志开始-->
+  <div class="zhanghu_jf_nav mainbox">
+   <table width="100%" border="0">
+   <tr>
+     <td id="zhanghu_jf_nav_title">
+      <a href="#">订单详情</a>
+      <a href="#">支付明细</a>
+      <a href="#">发货信息</a>
+      <a href="#">退款记录</a>
+      <a href="#">退货信息</a>
+      <a href="#" class="current">操作日志</a>
+     </td>
+    <tr>
+   </table>
+   </div>
+  <table width="98%" cellpadding="0" cellspacing="0" align="center" class="tytable border_top border_b">
+  <tr>
+   <td width="20%" class="pfr border_bot_no">
+     <input name="" type="button"  class="button_1" value="返 回"/>
+   </td>
+  </tr>
+</table>
+  <table width="98%" cellpadding="0" cellspacing="0" align="center" id="contenttb">
+    <tbody>
+      <tr>
+        <td width="8%" class="border_l">日志编号</td>
+        <td width="9%">操作者</td>
+        <td width="17%">操作时间</td>
+        <td width="10%">IP</td>
+        <td width="9%">订单状态</td>
+        <td width="14%">支付状态</td>
+        <td width="12%">发货状态</td>
+        <td width="21%">备注</td>
+      </tr>
+      <tr>
+        <td class="border_l">255555445544</td>
+        <td>[系统]</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已取消</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td><u>超过24小时未支付，系统自动撤单</u></td>
+       </tr>
+       <tr>
+        <td class="border_l">255555445544</td>
+        <td>admin</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已审核</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td></td>
+       </tr>
+       <tr>
+        <td class="border_l">255555445544</td>
+        <td>admin</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已审核</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td><u>已确认订单有效</u></td>
+       </tr>
+       <tr>
+        <td class="border_l">255555445544</td>
+        <td>[系统]</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已取消</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td><u>超过24小时未支付，系统自动撤单</u></td>
+       </tr>
+       <tr>
+        <td class="border_l">255555445544</td>
+        <td>admin</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已审核</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td></td>
+       </tr>
+       <tr>
+        <td class="border_l">255555445544</td>
+        <td>admin</td>
+        <td>2012-02-03 15:12:36</td>
+        <td>210.123.44.56</td>
+        <td>已审核</td>
+        <td>未支付</td>
+        <td>未发货</td>
+        <td><u>已确认订单有效</u></td>
+       </tr>
+    </tbody>
+</table>
+</body>
+<script type="text/javascript">
+<!--
+function onloadEvent(func){
+        var one=window.onload
+        if(typeof window.onload!='function'){
+                window.onload=func
+        }
+        else{
+                window.onload=function(){
+                        one();
+                        func();
+                }
+        }
+} 
+function showtable(){
+        var tableid='contenttb';                //表格的id
+        var overcolor='#fffbef';        //鼠标经过颜色
+        var color1='#fdfcfc';                //第一种颜色
+        var color2='#f9f9f9';                //第二种颜色
+        var tablename=document.getElementById(tableid)
+        var tr=tablename.getElementsByTagName("tr")
+        for(var i=1 ;i<tr.length;i++){
+                tr[i].onmouseover=function(){
+                        this.style.backgroundColor=overcolor;
+                }
+                tr[i].onmouseout=function(){
+                        if(this.rowIndex%2==0){
+                                this.style.backgroundColor=color1;
+                        }else{
+                                this.style.backgroundColor=color2;
+                        }
+                }
+                if(i%2==0){
+                        tr[i].className="color1";
+                }else{
+                        tr[i].className="color2";
+                }
+        }
+}
+onloadEvent(showtable);
+-->
+</script>
+</html>

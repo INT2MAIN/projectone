@@ -1,0 +1,89 @@
+input{
+	display: none;
+}
+.dd{
+	overflow: hidden;
+	float:left;
+	width: 350px;
+}
+ul {
+    background: rgb(50, 60, 60);
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 100px;
+}
+.aa {
+    width: 350px;
+    height: 358px;
+    top: 8px;
+    position: relative;
+    background: url(./img/jiuzaigou.jpg) no-repeat;
+}
+.bb {
+    display: inherit;
+    font-weight: bold;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    border-left: 8px groove #47a130;
+    border-bottom: 8px solid #2a561f;
+    margin: 0 auto;
+    position: relative;
+    top: 42%;
+    background-color: #b0e6a2;
+    text-align: center;
+    line-height: 40px;
+}
+#tm:checked ~section{
+ transform: translateX(100px);
+}
+section{
+	transition: all 0.25s;
+}
+ul li span{
+	opacity: 0;
+	width:50px;
+	height:30px;
+	display: block;
+	transform: translateX(30px);
+	transition: all 0.25s;
+}
+li{
+	list-style: none;
+}
+#tm:checked ~.ee li span{
+	opacity: 1;
+	transform: translateX(0);
+}
+#tm:checked ~ .ee li:nth-child(1) span {
+    transition-delay: 0.08s;
+}
+#tm:checked ~ .ee li:nth-child(2) span {
+    transition-delay: 0.16s;
+}
+#tm:checked ~ .ee li:nth-child(3) span {
+    transition-delay: 0.24s;
+}
+#tm:checked ~ .ee li:nth-child(4) span {
+    transition-delay: 0.32s;
+}
+
+/*#tm:checked ~ .ee li:nth-child(1) span {
+    transition-delay: 0.08s;
+}
+#tm:checked ~ .ee span {
+    opacity: 1;
+    transform: translateX(0);
+}
+.ee span {
+    font: bold 12px/48px Montserrat;
+    display: block;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.4s;
+}*/

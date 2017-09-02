@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>处理订单支付明细</title>
+<link rel="stylesheet" type="text/css" href="../css/all.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<!--当前位置开始-->
+<div class="dq_weizhi_nav">
+    <p>当前位置：<a href="#">管理中心</a> &gt; <a href="#">订单管理</a> &gt;<a class="dqwz"> 处理订单</a></p>
+    </div>
+<!--当前位置结束-->
+<!--查看订单退款记录开始-->
+  <div class="zhanghu_jf_nav mainbox">
+   <table width="100%" border="0">
+   <tr>
+     <td id="zhanghu_jf_nav_title">
+      <a href="#">订单详情</a>
+      <a href="#" class="current">支付明细</a>
+      <a href="#">发货信息</a>
+      <a href="#">退款记录</a>
+      <a href="#">退货信息</a>
+      <a href="#">操作日志</a>
+     </td>
+    <tr>
+   </table>
+   <table border="0" width="100%"  id="border_bno">
+    <tr>
+     <td id="tsno_border" >
+      <p>温馨提示：<u>在以下输入选项中<b>*</b>为必填项</u></p>
+      </td>
+      </tr>
+    </table>
+   </div>
+  <table width="98%" cellpadding="0" cellspacing="0" align="center" id="contenttb">
+    <tbody>
+      <tr>
+        <td width="7%" class="border_l">支付编号</td>
+        <td width="8%">支付方式</td>
+        <td width="16%">支付渠道</td>
+        <td width="9%">应付金额</td>
+        <td width="8%">到账金额</td>
+        <td width="16%">付款人</td>
+        <td width="9%">支付状态</td>
+        <td width="9%">支付时间</td>
+        <td width="9%">交易流水</td>
+        <td width="18%">操作</td>
+      </tr>
+      <tr>
+        <td class="border_l">255555445544</td>
+        <td>在线支付</td>
+        <td>支付宝[农业银行]</td>
+        <td>￥5683.00</td>
+        <td>￥0.00</td>
+        <td>韩语</td>
+        <td><b>未支付</b></td>
+        <td></td>
+        <td></td>
+        <td><a href="#">手动到账</a></td>
+      </tr>
+      <tr>
+        <td class="border_l">10000252555</td>
+        <td>在线支付</td>
+        <td>虚拟账户[可提现]</td>
+        <td>￥5683.00</td>
+        <td>￥5683.00</td>
+        <td>韩语</td>
+        <td><b>已支付</b></td>
+        <td>2012-06-12 13:15:45</td>
+        <td>10125565626</td>
+        <td><a href="#">查看收款单</a></td>
+      </tr>
+      <tr>
+        <td class="border_l">255555445544</td>
+        <td>在线支付</td>
+        <td>支付宝[农业银行]</td>
+        <td>￥5683.00</td>
+        <td>￥0.00</td>
+        <td>韩语</td>
+        <td><b>未支付</b></td>
+        <td></td>
+        <td></td>
+        <td><a href="#">手动到账</a></td>
+      </tr>
+      <tr>
+        <td class="border_l">10000252555</td>
+        <td>在线支付</td>
+        <td>虚拟账户[可提现]</td>
+        <td>￥5683.00</td>
+        <td>￥5683.00</td>
+        <td>韩语</td>
+        <td><b>已支付</b></td>
+        <td>2012-06-12 13:15:45</td>
+        <td>10125565626</td>
+        <td><a href="#">查看收款单</a></td>
+      </tr>
+    </tbody>
+</table>
+<div class="jb_Info_nav order_clzfmx dispaly_n">
+  <table align="center">
+    <tr>
+      <td width="8%"><span>支付编号：</span></td>
+      <td width="92%">123164262</td>
+     </tr>
+    <tr>
+      <td><span>应付金额：</span></td>
+      <td>￥6895.00</td>
+    </tr>
+    <tr>
+      <td><span>实付金额：</span></td>
+      <td colspan="3">￥0.00</td>
+    </tr>
+    <tr>
+      <td><span>本次到账金额：</span></td>
+      <td><input name="" type="text" class="text_2" value="153.00" /> 元 <u>*</u></td>
+    </tr>
+    <tr>
+      <td valign="top"><span>收款单备注：</span></td>
+      <td><textarea name="" cols="" rows=""  class="textarea_1"></textarea> <u>*</u></td>
+    </tr>
+    <tr>
+      <td valign="top"><span></span></td>
+      <td><input name="" type="button"  class="button_1" value="保 存"/><input name="" type="button"  class="button_1" value="返 回"/></td>
+    </tr>
+  </table>
+</div>
+</body>
+<script type="text/javascript">
+<!--
+function onloadEvent(func){
+        var one=window.onload
+        if(typeof window.onload!='function'){
+                window.onload=func
+        }
+        else{
+                window.onload=function(){
+                        one();
+                        func();
+                }
+        }
+} 
+function showtable(){
+        var tableid='contenttb';                //表格的id
+        var overcolor='#fffbef';        //鼠标经过颜色
+        var color1='#fdfcfc';                //第一种颜色
+        var color2='#f9f9f9';                //第二种颜色
+        var tablename=document.getElementById(tableid)
+        var tr=tablename.getElementsByTagName("tr")
+        for(var i=1 ;i<tr.length;i++){
+                tr[i].onmouseover=function(){
+                        this.style.backgroundColor=overcolor;
+                }
+                tr[i].onmouseout=function(){
+                        if(this.rowIndex%2==0){
+                                this.style.backgroundColor=color1;
+                        }else{
+                                this.style.backgroundColor=color2;
+                        }
+                }
+                if(i%2==0){
+                        tr[i].className="color1";
+                }else{
+                        tr[i].className="color2";
+                }
+        }
+}
+onloadEvent(showtable);
+-->
+</script>
+</html>

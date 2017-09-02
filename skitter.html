@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="skitter-master/dist/skitter.css">
+	<script src="./jquery-3.2.1.min.js">
+
+    </script> 
+    <script src="skitter-master/examples/js/jquery.easing.1.3.js"></script>
+    <script src="skitter-master/dist/jquery.skitter.min.js">
+    	
+    </script>
+    <script>
+    	$(function(){
+    		 var animations = $('.skitter-large').skitter('getAnimations');
+  for (var i in animations) {
+    var animation = animations[i];
+    var item = '<li><a href="#" data-animation="' + animation + '">' + animation + '</a></li>';
+    $('#change-animation ul').append(item);
+  }
+    	})
+    </script>
+</head>
+<body>
+ <div id="content" style="margin:0;padding:0">
+  <div class="border_box" style="margin:0;padding:0">
+    <div class="box_skitter box_skitter_large" style="margin:0;padding:0">
+      <ul>
+        <li><a href="#cube"><img src="img/emei2.jpg" class="cube" /></a>
+          <div class="label_text">
+            <p>cube</p>
+          </div>
+        </li>
+        <li><a href="#cubeRandom"><img src="img/emei2.jpg" class="cubeRandom" /></a>
+          <div class="label_text">
+            <p>cubeRandom</p>
+          </div>
+        </li>
+        <li><a href="#block"><img src="img/emei2.jpg" class="block" /></a>
+          <div class="label_text">
+            <p>block</p>
+          </div>
+        </li>
+        <li><a href="#cubeStop"><img src="img/emei2.jpg" class="cubeStop" /></a>
+          <div class="label_text">
+            <p>cubeStop</p>
+          </div>
+        </li>
+        <li><a href="#cubeHide"><img src="img/emei2.jpg" class="cubeHide" /></a>
+          <div class="label_text">
+            <p>cubeHide</p>
+          </div>
+        </li>
+        <li><a href="#cubeSize"><img src="img/emei2.jpg" class="cubeSize" /></a>
+          <div class="label_text">
+            <p>cubeSize</p>
+          </div>
+        </li>
+        <li><a href="#horizontal"><img src="img/emei2.jpg" class="horizontal" /></a>
+          <div class="label_text">
+            <p>horizontal</p>
+          </div>
+        </li>
+        <li><a href="#showBars"><img src="img/emei2.jpg" class="showBars" /></a>
+          <div class="label_text">
+            <p>showBars</p>
+          </div>
+        </li>
+        <li><a href="#showBarsRandom"><img src="img/emei2.jpg" class="showBarsRandom" /></a>
+          <div class="label_text">
+            <p>showBarsRandom</p>
+          </div>
+        </li>
+        <li><a href="#tube"><img src="img/emei2.jpg" class="tube" /></a>
+          <div class="label_text">
+            <p>tube</p>
+          </div>
+        </li>
+        <li><a href="#fade"><img src="img/emei2.jpg" class="fade" /></a>
+          <div class="label_text">
+            <p>fade</p>
+          </div>
+        </li>
+        <li><a href="#fadeFour"><img src="img/emei2.jpg" class="fadeFour" /></a>
+          <div class="label_text">
+            <p>fadeFour</p>
+          </div>
+        </li>
+        <li><a href="#paralell"><img src="img/emei2.jpg" class="paralell" /></a>
+          <div class="label_text">
+            <p>paralell</p>
+          </div>
+        </li>
+        <li><a href="#blind"><img src="img/emei2.jpg" class="blind" /></a>
+          <div class="label_text">
+            <p>blind</p>
+          </div>
+        </li>
+        <li><a href="#blindHeight"><img src="img/emei2.jpg" class="blindHeight" /></a>
+          <div class="label_text">
+            <p>blindHeight</p>
+          </div>
+        </li>
+        <li><a href="#blindWidth"><img src="img/emei2.jpg" class="blindWidth" /></a>
+          <div class="label_text">
+            <p>blindWidth</p>
+          </div>
+        </li>
+        <li><a href="#directionTop"><img src="img/emei2.jpg" class="directionTop" /></a>
+          <div class="label_text">
+            <p>directionTop</p>
+          </div>
+        </li>
+        <li><a href="#directionBottom"><img src="img/emei2.jpg" class="directionBottom" /></a>
+          <div class="label_text">
+            <p>directionBottom</p>
+          </div>
+        </li>
+        <li><a href="#directionRight"><img src="img/emei2.jpg" class="directionRight" /></a>
+          <div class="label_text">
+            <p>directionRight</p>
+          </div>
+        </li>
+        <li><a href="#directionLeft"><img src="img/emei2.jpg" class="directionLeft" /></a>
+          <div class="label_text">
+            <p>directionLeft</p>
+          </div>
+        </li>
+        <li><a href="#cubeStopRandom"><img src="img/emei2.jpg" class="cubeStopRandom" /></a>
+          <div class="label_text">
+            <p>cubeStopRandom</p>
+          </div>
+        </li>
+        <li><a href="#cubeSpread"><img src="img/emei2.jpg" class="cubeSpread" /></a>
+          <div class="label_text">
+            <p>cubeSpread</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+	$('.box_skitter_large').skitter({});
+</script>
+</body>
+</html>
